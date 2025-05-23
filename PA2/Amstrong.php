@@ -15,8 +15,8 @@ font-size:16px;
 </head> 
 <body> 
 <h2>Armstrong Number Checker</h2> 
-<form action=" " method="post">
-<label for="number">Enter a number:</label> 
+<form action=" " method="post"> 
+    <label for="number">Enter a number:</label> 
 <input type="text" id="number" name="number" class="blue-textbox" 
 placeholder="TEXT INPUT"> 
 <input type="submit" name="check" value="Check"> 
@@ -38,7 +38,7 @@ $number = $_POST['number'];
 if(ctype_digit($number) && $number>0){ 
 if(isArmstrong($number)){ 
 echo "<h3>$number is an Armstrong number.</h3>"; 
-echo "<p>Numbers from 1 to $number that are Armstrong numbers:</p>"; 
+echo "<p>Numbers from 1 to $number that are Armstrong numbers:</p>";
 for($i = 1; $i <=$number; $i++){ 
 if(isArmstrong($i)){ 
 echo "$i "; 
